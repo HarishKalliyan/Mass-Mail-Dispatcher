@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif  ;
+    font-weight: 500;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+h2{
+    color:#505581;
+    -webkit-text-stroke: 1px #2e2f5b;
+    font-size: 40px;
+    font-weight: 100px;
+}
+h1{
+    top: auto;
+    font-size:75px;
+    font-weight: 8px;
+    color: transparent;
+    -webkit-text-stroke: 1.17px #dfdede;
+    background: url(cc5.jpeg);
+    -webkit-background-clip: text;
+    background-position: 750px 800px;
+    animation:back 15s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 10px 800px;
+    }
+}
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 128vh;
+    background: linear-gradient(45deg, #ff6145, #eb4081, #23b9f0, #24dbb1);
+    background: linear-gradient(-45deg, #ec5236, #eb4081, #23b9f0, #24dbb1);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+}
+#head{
+    font-size: 50px;
+    text-align: left;
+}
+#box-heading{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+.mailInfo{
+    width: 500px;
+    position: relative;
+    font-size:28px;
+    font-weight: 10px;
+    height: 65%;
+    background-color: rgb(204,211,214);
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #bcddf3;
+    z-index: 2;
+}
+#from,#subject{
+    margin: 14px;
+    padding: 10px;
+    width: 470px;
+    height: 40px;
+    border-radius: 4px;
+}
+#msg{
+    margin: 14px;
+    padding: 10px;
+    width: 40px;
+    width: 470px;
+    border-radius: 4px;
+}
+#submit{
+    width: 10em;
+    height: 3em;
+    margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+button{
+    background: #0a3b47;
+    color: #e6dede;
+    border: 2px solid #fcfbfb;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    border-radius: 1ch;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: 0 1px 1px #130b0b;
+    position: absolute;
+}
+button:hover, button:focus{
+    background-color: #e6bc43;
+    color: #ebf1f1;
+}
+.select input{
+    background-color: rgb(255,255,255);
+    border: none;
+    margin: 6vh auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(243, 205, 205);
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    width: 350px;
+}
+.langu{
+    top: 0px;
+    left:0px;
+}
+.select input::file-selector-button{
+    background:#ff8d2c;
+    color: white;
+    padding: 20px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px #6b4559;
+    outline: none;
+}
+.select input::file-selector-button:hover{
+    background-color: #ec6170;
+    cursor: pointer;
+}
+.tables{
+    width: 1000px;
+    margin: 0 auto;
+    color: white;
+}
+table{
+    text-align: left;
+    float: left;
+    width: 500px;
+}
+hr{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.base{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(45deg, #fdf5c9, #c2f2d0, #ffc5d9, #6b3e26);
+    color: rgb(48, 25, 25);
+    margin-bottom: 0;
+}
