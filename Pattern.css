@@ -160,7 +160,8 @@ button:hover, button:focus{
 .tables{
     width: 1000px;
     margin: 0 auto;
-    color: white;
+    font-size: larger;
+    color: rgb(0, 4, 42);
 }
 .table{
     text-align: left;
@@ -178,7 +179,7 @@ hr{
     font-size: 25px;
     height: 30px;
     text-align: center;
-    background: linear-gradient(45deg, #fdf5c9, #c2f2d0, #ffc5d9, #6b3e26);
+    background: linear-gradient(45deg, #fdf5c997, #c2f2d07d, #d7185bbd, #6b3e268b);
     color: rgb(48, 25, 25);
     margin-bottom: 0;
 }
@@ -188,6 +189,8 @@ hr{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 8px;
+    margin-top: 5px;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: #130b0b;
@@ -198,6 +201,7 @@ hr{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 5px;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: #130b0b;
